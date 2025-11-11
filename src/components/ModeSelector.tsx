@@ -23,7 +23,7 @@ export default function ModeSelector({ mode, onModeChange }: Props) {
           key={m.value}
           onClick={() => onModeChange(m.value)}
           className={`
-            px-4 py-2 rounded-lg border transition-all font-medium
+            px-4 py-2 rounded-lg border transition-all font-medium cursor-pointer
             ${
               mode === m.value
                 ? "bg-primary text-primary-foreground border-primary"

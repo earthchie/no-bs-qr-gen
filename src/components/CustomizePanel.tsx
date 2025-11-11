@@ -59,7 +59,7 @@ export default function CustomizePanel({ config, onConfigChange, onReset }: Prop
     <div className="bg-surface border border-border rounded-lg p-6 space-y-6">
       <div className="flex items-center justify-between">
         <h2 className="text-xl font-semibold">Customization</h2>
-        <button onClick={onReset} className="text-sm text-primary hover:underline">
+        <button onClick={onReset} className="text-sm text-primary hover:underline cursor-pointer">
           Reset to Defaults
         </button>
       </div>
@@ -112,7 +112,7 @@ export default function CustomizePanel({ config, onConfigChange, onReset }: Prop
             <button
               key={theme.name}
               onClick={() => handleThemeChange(theme.name)}
-              className={`px-3 py-2 rounded-lg border text-sm transition-all ${
+              className={`px-3 py-2 rounded-lg border text-sm cursor-pointer transition-all ${
                 config.theme.name === theme.name
                   ? "bg-primary text-primary-foreground border-primary"
                   : "bg-surface hover:bg-surface-hover border-border"
@@ -196,7 +196,7 @@ export default function CustomizePanel({ config, onConfigChange, onReset }: Prop
             <button
               key={level}
               onClick={() => updateConfig("errorCorrectionLevel", level)}
-              className={`px-3 py-2 rounded-lg border text-sm ${
+              className={`px-3 py-2 rounded-lg border text-sm cursor-pointer ${
                 config.errorCorrectionLevel === level
                   ? "bg-primary text-primary-foreground border-primary"
                   : "bg-surface hover:bg-surface-hover border-border"
@@ -230,7 +230,7 @@ export default function CustomizePanel({ config, onConfigChange, onReset }: Prop
             <button
               key={style}
               onClick={() => updateConfig("dotStyle", style)}
-              className={`px-3 py-2 rounded-lg border text-sm capitalize ${
+              className={`px-3 py-2 rounded-lg border text-sm capitalize cursor-pointer ${
                 config.dotStyle === style
                   ? "bg-primary text-primary-foreground border-primary"
                   : "bg-surface hover:bg-surface-hover border-border"
@@ -257,7 +257,7 @@ export default function CustomizePanel({ config, onConfigChange, onReset }: Prop
               <span className="text-xs font-medium text-foreground">Logo Settings</span>
               <button
                 onClick={handleRemoveLogo}
-                className="flex items-center gap-1 px-2 py-1 text-xs text-red-600 bg-red-50 hover:bg-red-100 dark:bg-red-950/50 dark:hover:bg-red-950 border border-red-200 dark:border-red-900 rounded transition-colors"
+                className="flex items-center gap-1 px-2 py-1 text-xs text-red-600 bg-red-50 hover:bg-red-100 dark:bg-red-950/50 dark:hover:bg-red-950 border border-red-200 dark:border-red-900 rounded transition-colors cursor-pointer"
                 title="Remove logo"
               >
                 <X className="w-3 h-3" />
@@ -284,7 +284,7 @@ export default function CustomizePanel({ config, onConfigChange, onReset }: Prop
                   <button
                     key={shape}
                     onClick={() => updateConfig("logo", { ...config.logo!, backgroundShape: shape })}
-                    className={`flex-1 px-2 py-1 rounded border text-xs capitalize ${
+                    className={`flex-1 px-2 py-1 rounded border text-xs cursor-pointer capitalize ${
                       config.logo!.backgroundShape === shape
                         ? "bg-primary text-primary-foreground border-primary"
                         : "bg-surface border-border"
