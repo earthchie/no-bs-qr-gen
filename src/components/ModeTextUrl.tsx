@@ -7,7 +7,7 @@ type Props = {
 }
 
 export default function ModeTextUrl({ onPayloadChange }: Props) {
-  const [text, setText] = useState("Love this website? Tip me at 0x9999999d46618d114c133e8746396c5bf0090b2b ☕")
+  const [text, setText] = useState("")
 
   useEffect(() => {
     onPayloadChange(text)
@@ -23,7 +23,7 @@ export default function ModeTextUrl({ onPayloadChange }: Props) {
           id="text-input"
           value={text}
           onChange={(e) => setText(e.target.value)}
-          placeholder="Enter text or URL..."
+          placeholder="Enter Text or URL..."
           rows={4}
           className="w-full px-3 py-2 border border-border rounded-lg bg-surface focus:outline-none focus:ring-2 focus:ring-primary"
         />
