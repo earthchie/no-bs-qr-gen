@@ -48,13 +48,13 @@ npm run build
 3. Configure build settings:
    - **Framework preset**: Vite
    - **Build command**: `npm run build`
-   - **Output directory**: `dist`
+   - **Output directory**: `out`
 4. Deploy!
 
 ### Manual Configuration
 If not using the Vite preset, use these settings:
 - **Build command**: `npm run build`
-- **Build output directory**: `dist`
+- **Build output directory**: `out`
 - **Root directory**: `/` (leave as default)
 - **Environment variables**: None required
 
@@ -70,12 +70,12 @@ If not using the Vite preset, use these settings:
 
 **Bitcoin**:
 ```
-bitcoin:bc1qw508d6qejxtdg4y5r3zarvary0c5xw7kv8f3t4?amount=0.01
+bitcoin:bc1q...f3t4?amount=0.01
 ```
 
 **Ethereum**:
 ```
-ethereum:0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb6@1/transfer?value=1000000000000000
+ethereum:0x742d....Eb6@1/transfer?value=1000000000000000
 ```
 
 **Wi-Fi**:
@@ -89,7 +89,7 @@ BEGIN:VCARD
 VERSION:3.0
 FN:John Doe
 N:Doe;John;;;
-ORG:ACME Corp
+ORG:DomeCloud Co., Ltd.
 TEL:+1-555-1234
 EMAIL:john@example.com
 END:VCARD
