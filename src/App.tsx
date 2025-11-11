@@ -66,7 +66,7 @@ function App() {
       <footer className="border-t border-border bg-surface mt-16 py-8">
         <div className="container mx-auto px-4 text-center text-foreground">
           <p className="flex items-center justify-center gap-2">
-            <a href="https://fb.me/earthchie" target="_blank" rel="noopener noreferrer">&copy; {new Date().getFullYear()} Earthchie</a>
+            <a href="https://github.com/earthchie" target="_blank" rel="noopener noreferrer">&copy; {new Date().getFullYear()} @earthchie</a>
           </p>
         </div>
       </footer>
