@@ -1,6 +1,8 @@
 # QR Code Generator
 
-A professional React-based QR code generator with logo support, gradients, transparent backgrounds, and multiple input modes. Built with Vite + TypeScript + Tailwind CSS, ready for deployment on Cloudflare Pages.
+[https://qr.project.in.th/](https://qr.project.in.th/)
+
+A professional React-based QR code generator with logo support, gradients, transparent backgrounds, and multiple input modes. Built with Vite + TypeScript + Tailwind CSS, ready for deployment on your own domain with Cloudflare Pages.
 
 ## Features
 
@@ -46,17 +48,11 @@ npm run build
 1. Push code to GitHub repository
 2. Connect repository to Cloudflare Pages
 3. Configure build settings:
-   - **Framework preset**: Vite
+   - **Framework preset**: None
    - **Build command**: `npm run build`
    - **Output directory**: `out`
+   - **Environment variables**: None required
 4. Deploy!
-
-### Manual Configuration
-If not using the Vite preset, use these settings:
-- **Build command**: `npm run build`
-- **Build output directory**: `out`
-- **Root directory**: `/` (leave as default)
-- **Environment variables**: None required
 
 ## Usage Tips
 
